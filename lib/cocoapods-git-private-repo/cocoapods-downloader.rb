@@ -1,3 +1,5 @@
+require 'cocoapods-git-private-repo/git_private_repo_downloader'
+
 module Pod
   module Downloader
     class <<self
@@ -9,6 +11,7 @@ module Pod
       
       puts "CocoaPods Git Private Repo: Overriding downloader_class_by_key to use GitPrivateRepoDownloader"
       puts original.inspect
+      original[:git] = GitPrivateRepoDownloader
 
       original
     end
