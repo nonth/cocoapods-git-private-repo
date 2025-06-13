@@ -7,8 +7,6 @@ module Pod
         # Check if a JSON configuration file exists with private key mappings
         json_config_path = 'keys.json'
 
-        puts "file path: #{json_config_path}"
-
         # Only proceed with JSON processing if the file exists
         return unless File.exist?(json_config_path)
         
@@ -28,9 +26,6 @@ module Pod
       end
 
       def execute_command(executable, command, raise_on_failure = false)
-        puts "Executing command: #{executable} #{command.inspect}"
-        puts "Options: #{self.options.inspect}"
-
         if executable == 'git' && options[:private_key_path]
           private_key = options[:private_key_path]
           
