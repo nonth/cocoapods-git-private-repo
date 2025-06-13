@@ -1,2 +1,1 @@
-require 'cocoapods-git-private-repo/cocoapods_downloader'
-require 'cocoapods-git-private-repo/cocoapods_sources_manager'
+require 'cocoapods-git-private-repo/git_private_repo_executable'
