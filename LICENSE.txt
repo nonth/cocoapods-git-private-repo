@@ -1,4 +1,4 @@
-Copyright (c) 2025 nonth <nonthz@gmail.com>
+Copyright (c) 2025 Nonthawat Srichad <nonthz@gmail.com>
 
 MIT License
 
